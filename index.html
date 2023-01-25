@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RSP Game</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="content">
+            <div class="header">
+                <div class="logo">
+                    <img src="/images/logo.svg" alt="">
+                </div>
+                <div class="score">
+                    SCORE
+                    <span>00</span>
+                </div>
+            </div>
+            <main>
+                <div class="step-one">
+                    <div>
+                        <img src="/images/bg-triangle.svg" alt="" class="triangle">
+                        <img src="/images/icon-paper.svg" alt="" class="paper-icon icon">
+                        <img src="/images/icon-scissors.svg" alt="" class="scissors-icon icon">
+                        <img src="/images/icon-rock.svg" alt="" class="rock-icon icon">
+                    </div>
+                </div>
+                <div class="step-two hidden">
+                    <div class="player-choice">
+                        <div>YOU PICKED</div>
+                        <img src="" alt="">
+                    </div>
+                    <div class="hidden" id="mid-block">
+                        <div class="result"></div>
+                        <div class="play-again">PLAY AGAIN</div>
+                    </div>
+                    <div class="house-choice">
+                        <div>THE HOUSE PICKED</div>
+                        <div class="shadow"></div>
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </main>
+            <div class="rules-btn">RULES</div>
+            <div class="rules hidden">
+                <span class="ttle">RULES</span>
+                <span class="close-icon">
+                    <img src="/images/icon-close.svg" alt="">
+                </span>
+                <img src="/images/image-rules.svg" alt="">
+            </div>
+            <footer> 
+                Designed by 
+                <span>
+                    <a href="https://www.frontendmentor.io/home" target="_blank">Front-end mentor</a>
+                </span>, 
+                coded by 
+                <span>AIT BOUDAOUD YAZID</span>
+            </footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

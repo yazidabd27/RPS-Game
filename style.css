@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+*{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    background: linear-gradient(to bottom, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    height: 100vh;
+    padding: 80px 288px;
+}
+
+.header{
+    border: 3px solid hsl(217, 16%, 45%);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border-radius: 16px;
+}
+
+.score{
+    color: hsl(229, 64%, 46%);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 8px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.score span{
+    color: hsl(229, 25%, 31%);
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.step-one{
+    padding-top: 40px;
+}
+
+.step-one div{
+    padding-top: 80px;
+    position: relative;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.flex{
+    display: flex;
+}
+
+.icon{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    cursor: pointer;
+    border-width: 15px;
+    border-style: solid;
+}
+
+.paper-icon{
+    border-color: hsl(230, 89%, 65%);
+}
+
+.step-one .paper-icon{
+    position: absolute;
+    top: 80px;
+    transform: translate(-150%, -50%);
+    left: 50%;
+}
+
+.scissors-icon{
+    border-color: hsl(39, 89%, 49%);
+}
+
+.step-one .scissors-icon{
+    position: absolute;
+    top: 80px;
+    transform: translate(50%, -50%);
+    left: 50%;
+}
+
+.step-one .rock-icon{
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, 20%);
+    left: 50%;
+}
+
+.rock-icon{
+    border-color: hsl(349, 70%, 56%);
+}
+
+.step-two{
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.shadow{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: hsl(237, 49%, 15%);
+    margin-top: 20px;
+}
+
+.step-two .icon{
+    width: 200px;
+    height: 200px;
+    border-width: 20px;
+}
+
+.player-choice,
+.house-choice,
+#mid-block{
+    text-align: center;
+}
+
+.player-choice div,
+.house-choice div{
+    padding-bottom: 40px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+}
+
+.result{
+    color: #fff;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.play-again{
+    background-color: #fff;
+    color: hsl(229, 25%, 31%);
+    border-radius: 5px;
+    padding: 10px 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.play-again:hover{
+    color: hsl(349, 70%, 56%);
+}
+
+.rules-btn{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: #fff;
+    border: 2px solid hsl(217, 16%, 45%);
+    border-radius: 7px;
+    padding: 7px 30px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.rules{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.rules .ttle{
+    font-weight: 700;
+    color: hsl(229, 25%, 31%);
+    font-size: 20px;
+    float: left;
+}
+
+.rules .close-icon{
+    cursor: pointer;
+    float: right;
+}
+
+.rules > img{
+    margin-top: 40px;
+}
+
+footer{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+}
+
+footer span,
+footer span a{
+    font-weight: 700;
+    color:hsl(229, 64%, 46%) !important;
+}
+
+@media (min-width:375px) and (max-width:412px) {
+    .content{
+        padding: 30px;
+    }
+
+    .header .score{
+        padding: 5px 20px
+    }
+
+    .header img{
+        width: 100px;
+    }
+
+    .icon{
+        width: 100px !important;
+        height: 100px !important;
+        border-width: 15px !important;
+        padding: 20px;
+    }
+
+    .rules-btn{
+        right: 50%;
+        transform: translateX(50%);
+        bottom: 70px;
+    }
+
+    footer{
+        bottom: 10px;
+        text-align: center;
+    }
+
+    .step-one > div{
+        height: 280px;
+    }
+
+    .triangle{
+        height: 100%;
+    }
+
+    .rules{
+        height: 100vh;
+        width: 100%;
+        border-radius: unset;
+        z-index: 2 ;
+    }
+
+    .close-icon{
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .rules .ttle{
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+        float:none;
+    }
+
+    .rules img{
+        margin-top: 100px !important;
+    }
+
+    #mid-block{
+        position: absolute;
+        bottom: 150px;
+    }
+
+    .shadow{
+        width: 100px;
+        height: 100px;
+        margin-top: 0 !important;
+        margin-left: auto;
+    }
+
+    .house-choice img{
+        margin-left: auto;
+    }
+
+    .player-choice,
+    .house-choice{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .player-choice div,
+    .house-choice div{
+        font-size: 12px;
+        margin-top: 20px;
+    }
+}
